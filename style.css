@@ -1,7 +1,28 @@
 @media (max-width: 2100px) {
   .container {
-    width: calc(100vw - 70px);
+    width: calc(100vw - 350px);
     margin: 40px auto;
+  }
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 721px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
   }
 }
 
@@ -64,6 +85,7 @@ a:hover {
   text-align: center
 }
 
+
 .list-inline {
   list-style: none;
   padding: 0
@@ -80,4 +102,21 @@ i {
 
 .padding-bottom {
   padding-bottom: 20px;
+}
+
+button {
+  background-color: #00a8e8;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.15);
+}
+
+button:hover {
+  background-color: #0077b6;
 }
